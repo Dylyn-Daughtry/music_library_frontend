@@ -1,0 +1,14 @@
+.newSong{
+    text-align: center;
+  width: 13%;
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(5rem,1fr));
+  background-color: darkgreen;
+}
+
+.inputDate{
+    width: 8rem;
+}
