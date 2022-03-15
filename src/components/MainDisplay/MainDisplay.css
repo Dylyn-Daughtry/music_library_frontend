@@ -24,3 +24,24 @@ html {
 		conic-gradient(from 90deg at 50% 50%, var(--c2) 0 32deg, var(--c4) 0 60.5deg, var(--c3) 0 90deg, var(--c1) 0 119.5deg, var(--c5) 0 148deg, var(--c2) 0 180deg,  #fff0 0 360deg) var(--gp);
 	background-color: var(--c5);
 }
+
+.wrapper{
+	width: 100%;
+	display:flex;
+	justify-content: left;
+	margin-top: 10rem;
+}
+
+.prettyTable{
+	border: 2px solid chartreuse;
+	background-color: rgb(30, 31, 31);
+	color: chartreuse;
+}
+
+.tcell{
+	padding: .5rem;
+}
+
+.hcell{
+	
+}

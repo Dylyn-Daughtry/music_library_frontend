@@ -1,6 +1,7 @@
 .newSong{
     text-align: center;
-  width: 13%;
+  width: 25%;
+  height: 60%;
   display: grid;
   gap: 1.5rem;
   padding: 1rem;

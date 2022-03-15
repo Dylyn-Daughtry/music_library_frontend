@@ -20,8 +20,9 @@ const CreateSong = (props) => {
                 genre: genre, 
             };
             console.log(newEntry)
-            // props.addNewEntryProperty(newEntry)
+            props.createSong(newEntry)
         }
+
        
     return (
         <div className='test'>
@@ -36,7 +37,7 @@ const CreateSong = (props) => {
                 <input className='inputDate' type='date' value={release_date} onChange={(e) => setRelease_Date(e.target.value)}/>
                 <label>Genre</label>
                 <input type='Genre' value={genre} onChange={(e) => setGenre(e.target.value)}/>
-                <button type='submit'>Submit</button>
+                <button type='submit'>Add Song</button>
 
 
             </form>
