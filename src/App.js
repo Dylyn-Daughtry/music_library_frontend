@@ -12,15 +12,17 @@ function App() {
   const [songs, setSongs] = useState([]);
   
   useEffect(() => {
-    getAllSongs();
-  }, [])
+    if (hideShow === false) getAllSongs();
+  }, [hideShow])
   
   const handleHideShow = () =>{
       setHideShow(!hideShow)
   }
   async function createSong(prop){
     let response = await axios.post('http://127.0.0.1:8000/api/music/', prop);
-    console.log(response.data)
+    if (response){
+      handleHideShow()
+    }
   }
 
   async function getAllSongs(prop){

@@ -39,9 +39,11 @@ html {
 }
 
 .tcell{
-	padding: .5rem;
+	border-bottom: 1px solid chartreuse;
+	padding: .7rem;
 }
 
 .hcell{
-	
+	width: 10rem;
+	border-bottom: 2px solid chartreuse;
 }

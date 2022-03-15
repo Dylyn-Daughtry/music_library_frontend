@@ -5,13 +5,13 @@ const MainDisplay = (props) => {
     return (
         <div className='wrapper'>
             <table className='prettyTable'>
-                <th className='headers'>
+                <thead className='headers'>
                     <td className='hname hcell'>Name</td>
                     <td className='hartist hcell'>Artist</td>
                     <td className='halbum hcell'>Album</td>
                     <td className='hrd hcell'>Release Date</td>
                     <td className='hgenre hcell'>Genre</td>
-                </th>
+                </thead>
                 <tbody>
                 {props.songs && props.songs.map((song, i)=>
                         (
