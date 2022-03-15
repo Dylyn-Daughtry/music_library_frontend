@@ -5,19 +5,13 @@ import CreateSong from '../CreateSong/CreateSong'
 
 const NavBar=(props)=> {
 
-  const[hideShow,setHideShow]=useState(false)
-
-    const handleHideShow = () =>{
-        setHideShow(!hideShow)
-    }
-
 
   return (
     <div className='NavBarWrapper'>
             <h1 className='Title'>Audio Box</h1>
         <div className='NavBarContainer'>
           <div>
-              <a onClick={handleHideShow} className='add' href="#">
+              <a onClick={props.createOnClick} className='add' href="#">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -39,7 +33,6 @@ const NavBar=(props)=> {
                 <span></span>
                 Delete Song
             </a>
-            <Modal onClick={handleHideShow}hideShow={hideShow}><CreateSong createSong={props.createSong} /></Modal>
           </div>
         </div>    
     </div>
